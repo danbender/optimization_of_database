@@ -17,4 +17,6 @@ The `rake db:setup` command could take several minutes to run.
 
 ## Result
 
-Now, the index page loads in <30ms.
+Rewrote some really expensive Active Record queries and added a [database index](http://rakeroutes.com/blog/increase-rails-performance-with-database-indexes/) to the user_id in the karma table. Wrote own Rake Task to calculate the total sum of a user’s karma points and store it in the database.
+
+Now, the index page loads in <4w0ms.
